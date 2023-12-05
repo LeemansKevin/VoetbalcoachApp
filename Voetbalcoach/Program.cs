@@ -6,10 +6,14 @@ class Program
     {
         StartClass startClass = new StartClass();
         Gegevens gegevens = new Gegevens();
+        BestandsManager bestandsManager = new BestandsManager();
+
+        
 
         startClass.Start();
         gegevens.Input();
         gegevens.Output();
+        bestandsManager.OpslaanNaarBestand(gegevens.array ,gegevens.bestandsNaam);
 
     }
 
